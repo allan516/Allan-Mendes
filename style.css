@@ -117,8 +117,15 @@ div .resultado {
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.89);
 	width: 100vw;
-	height: 74vh;
+	height: 0;
+	transition: .5s;
 	text-align: center;
+	overflow: hidden;
+}
+
+.resultado.mostrar {
+	visibility: visible;
+	height: 74vh;
 }
 
 div .resultado li {
