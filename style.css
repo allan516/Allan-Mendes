@@ -67,14 +67,18 @@ body {
 }
 
 /* Configurações do botão de menu */
+
 nav {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	position: sticky;
+	top: -1%;
 	width: 100vw;
 	background-color: var(--cor4);
 }
 
+nav div {
+	display: flex;
+	justify-content: center;
+}
 nav button {
 	display: flex;
 	flex-direction: column;
@@ -110,6 +114,11 @@ button.ativar .linha:nth-child(3){
 
 button.ativar .linha:nth-child(2){
 	width: 0;
+}
+
+.div-menu {
+	position: sticky;
+	top: 6%;
 }
 
 div .menu {
