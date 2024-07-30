@@ -115,16 +115,15 @@ button.ativar .linha:nth-child(2){
 div .resultado {
 	visibility: hidden;
 	position: absolute;
-	background-color: #787878d5;
+	background-color: rgba(255, 255, 255, 0.89);
 	width: 100vw;
 	height: 74vh;
 	text-align: center;
 }
 
 div .resultado li {
-	border: 1px solid black;
-	color: white;
-	padding: 10px;
+	color: black;
+	padding: 15px 0;
 	cursor: pointer;
 }
 
