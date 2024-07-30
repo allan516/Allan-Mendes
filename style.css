@@ -118,14 +118,14 @@ div .menu {
 	background-color: rgba(255, 255, 255, 0.89);
 	width: 100vw;
 	height: 0;
-	transition: .5s;
+	transition: .6s;
 	text-align: center;
 	overflow: hidden;
 }
 
 .menu.mostrar {
 	visibility: visible;
-	height: 74vh;
+	height: 1200px;
 }
 
 div .menu li {
@@ -146,9 +146,8 @@ div .menu li {
 /* ------------------ */
 main {
 	width: 100vw;
-	height: 75vh;
 	background-color: white;
-	overflow: hidden;
+	min-height: 1200px;
 }
 
 footer {
