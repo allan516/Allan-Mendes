@@ -112,7 +112,7 @@ button.ativar .linha:nth-child(2){
 	width: 0;
 }
 
-div .resultado {
+div .menu {
 	visibility: hidden;
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.89);
@@ -123,20 +123,25 @@ div .resultado {
 	overflow: hidden;
 }
 
-.resultado.mostrar {
+.menu.mostrar {
 	visibility: visible;
 	height: 74vh;
 }
 
-div .resultado li {
+div .menu li {
 	color: black;
 	padding: 15px 0;
 	cursor: pointer;
 }
 
-.resultado li:hover {
+.menu li:hover {
 	background-color: var(--cor3);
 	color: var(--cor5);
+}
+
+.menu li a {
+	text-decoration: none;
+	color: inherit;
 }
 /* ------------------ */
 main {
