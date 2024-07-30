@@ -22,7 +22,6 @@
 
     <div class="div-menu">
         <ul class="menu">
-            <li><a class="click" href="#home">Home</a></li>
             <li><a class="click" href="#quemSouEu">Quem sou eu</a></li>
             <li><a class="click" href="#projetos">Projetos</a></li>
             <li><a class="click" href="#contato">Contato</a></li>
@@ -31,29 +30,52 @@
     </div>
 
     <main>
-        <section id="home">
-            <h1>home</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste optio placeat earum perferendis nihil! Dolorem deleniti cumque, tempore quos, unde eligendi dignissimos, veniam labore adipisci neque repellendus omnis ipsa eaque!</p>
-        </section>
+        
         <section class="quemSouEu" id="quemSouEu">
             <article>
-                <h1>Quem sou eu</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum vel dicta delectus debitis ab corporis, aliquid saepe maxime incidunt obcaecati dolore explicabo enim quae aut repudiandae ut hic magnam esse atque. Voluptates magni, magnam accusamus pariatur vero distinctio temporibus natus, iure unde provident ea eaque quis rerum eveniet? Sequi eius eveniet quae nihil fugit, praesentium aliquam ullam? Quam ea, eaque esse et dignissimos repellat odit commodi sunt magni omnis, consequatur laudantium nisi enim, soluta culpa dolorem! Sit odit voluptates ipsam rerum nobis optio necessitatibus mollitia voluptate tempora magni quisquam inventore tempore fuga ipsa blanditiis dolores veniam consectetur saepe, recusandae at? Distinctio laboriosam iusto ratione. Non vel expedita ipsum optio iure? Quisquam dolores illum ab totam. Explicabo aperiam nesciunt repellendus, animi eveniet labore porro? Quas eos, unde omnis repellendus dicta non tempore officia deleniti ex odit eaque corrupti nulla magnam totam impedit nostrum molestiae? Itaque sit vel possimus aliquam aliquid corrupti cum deleniti incidunt, unde voluptas, ad eum cumque, accusamus voluptatem amet nobis minus quaerat eos nisi ab. Reiciendis alias accusamus delectus quos cum quia maxime veniam recusandae obcaecati iste cupiditate, dignissimos molestias nobis excepturi blanditiis animi consectetur iure cumque ipsum, placeat fuga quam expedita distinctio necessitatibus. </p>
+                <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
+            <h1>Olá,</h1>
+            <p>
+                Seja bem vindo(a) ao meu Portifólio.
+                Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas linguagens em que estou trabalhando .
+            </p>
             </article>
         </section>
+
         <section class="projetos" id="projetos">
             <h1>Projetos</h1>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis reprehenderit nostrum laboriosam, vitae sequi quo cumque dolor sit dignissimos in ipsam doloremque nemo nesciunt velit corporis perspiciatis eligendi odio quos non fugit iste reiciendis error, quis commodi. Obcaecati quae cumque deserunt quis quisquam nulla, consequatur, eum magnam, optio quod dicta?</p>
         </section>
+
         <section class="contato" id="contato">
             <h1>Contato</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat id libero quaerat commodi perspiciatis. Beatae deleniti autem nihil rem omnis cumque voluptatem aliquam iste? Deserunt porro minima tempora ea pariatur.</p>
+             <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
+                <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
+                <input type="hidden" name="redirectTo" value="https://allan516.github.io/pag-contato/">
+                <fieldset>
+                    <span>
+                      <label for="inome">Nome </label>
+                      <input type="text" name="name" id="inome" placeholder=" Seu nome" required autocomplete="name">
+                    </span> <br>
+                    
+                    <span>
+                      <label for="iemail">Email </label>
+                      <input type="email" name="email" id="iemail" placeholder=" Email" required autocomplete="email">
+                    </span><br>
+                    <span class="mensagem">
+                      <label for="itext">Mensagem</label>
+                      <textarea name="message" id="itext" rows="3" required minlength="10" maxlength="300"></textarea>
+                    </span><br>
+                    <input type="submit" class="enviar" value="Enviar">
+                </fieldset>
+            </form>
 
         </section>
+        
         <section id="redesSociais">
             <h1>redesSociais</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam facere, quis repudiandae alias repellat consequuntur ea possimus sequi doloribus porro a assumenda, provident minima maxime, odio reprehenderit iure dolor.</p>
+            <a href="">LinkedIn</a>
+            <a href="">GitHub</a>
+            <a href="">Instagram</a>
         </section>
 
     </main>
