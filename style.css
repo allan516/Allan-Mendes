@@ -113,7 +113,7 @@ button.ativar .linha:nth-child(2){
 }
 
 div .resultado {
-	visibility: visible;
+	visibility: hidden;
 	position: absolute;
 	background-color: #787878d5;
 	width: 100vw;
