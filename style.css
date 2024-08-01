@@ -70,7 +70,7 @@ body {
 
 nav {
 	position: sticky;
-	top: 0%;
+	top: 1%;
 	width: 100vw;
 	background-color: black;
 	z-index: 1;
@@ -119,7 +119,7 @@ button.ativar .linha:nth-child(2){
 
 .div-menu {
 	position: sticky;
-	top: 5.7%;
+	top: 6.7%;
 	z-index: 1;
 }
 
