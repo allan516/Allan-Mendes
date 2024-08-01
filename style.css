@@ -72,7 +72,7 @@ nav {
 	position: sticky;
 	top: -1%;
 	width: 100vw;
-	background-color: var(--cor4);
+	background-color: black;
 }
 
 nav div {
@@ -87,7 +87,7 @@ nav button {
 	height: 5vh;
 	margin: 5px 0;
 	border: 1px solid lightgray;
-	background-color: var(--cor4);
+	background-color: black;
 	cursor: pointer;
 }
 
@@ -103,12 +103,12 @@ nav button {
 
 button.ativar .linha:nth-child(1){
 	transform: translateY(2px) rotate(-45deg);
-	background-color: red;
+	background-color: white;
 }
 
 button.ativar .linha:nth-child(3){
 	transform: rotate(45deg);
-	background-color: red;
+	background-color: white;
 	position: absolute;
 }
 
@@ -152,13 +152,33 @@ div .menu li {
 	text-decoration: none;
 	color: inherit;
 }
-/* ------------------ */
+/* Configurações da seção perfil */
 main {
 	width: 100vw;
 	background-color: white;
 	min-height: 1200px;
 }
 
+main .perfil {
+    /* max-width: 768px; */
+    padding: 20px;
+    margin: 20px auto;
+    color: var(--cor1);
+    text-align: center; 
+}
+
+section .fotoPerfil {
+    display: block;
+    margin: 15px auto;
+    border: 3px solid var(--cor5);
+    border-radius: 50%;
+	background-color: var(--cor5);
+}
+
+/* Configurações da seção Projetos */
+
+
+/* ------------------------------- */
 footer {
 	display: flex;
 	align-items: center;
@@ -173,6 +193,46 @@ footer p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 }
+
+/* Configurações de Contato */
+
+#contato {
+	display: none;
+	max-width: 800px;
+	margin: 20px auto;
+  }
+  
+  fieldset {
+	border: none;
+  }
+  
+  span {
+	display: flex;
+	flex-direction: row;
+  }
+  
+  input, textarea {
+	width: 100%;
+  }
+  
+  .enviar {
+	background-color: #420283; 
+	color: #fff;
+	border-radius: 3px;
+	padding: 5px;
+  }
+  
+  .enviar:hover{
+	background-color: mediumpurple; 
+  }
+  input, textarea, label {
+	margin: 10px;
+  }
+  .mensagem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
 
 /* quemSouEu
 projetos
