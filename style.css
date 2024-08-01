@@ -163,16 +163,16 @@ main .perfil {
     /* max-width: 768px; */
     padding: 20px;
     margin: 20px auto;
-    color: var(--cor1);
+    color: black;
     text-align: center; 
 }
 
 section .fotoPerfil {
     display: block;
     margin: 15px auto;
-    border: 3px solid var(--cor5);
+    border: 3px solid var(--cor4);
     border-radius: 50%;
-	background-color: var(--cor5);
+	background-color: var(--cor4);
 }
 
 /* Configurações da seção Projetos */
