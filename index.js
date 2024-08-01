@@ -1,4 +1,17 @@
 const menu = document.querySelector('.menu');
+const elementos = document.querySelectorAll('.hidden');
+
+const myObserver = new IntersectionObserver((entrada) => {
+  entrada.forEach((elemento) => {
+    if(elemento.isIntersecting) {
+      elemento.target.classList.add('show');
+    } else {
+      elemento.target.classList.remove('show');
+    }
+  });
+});
+
+elementos.forEach((elementos) => myObserver.observe(elementos));
 
 function mostraMenu() {
   

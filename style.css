@@ -73,6 +73,7 @@ nav {
 	top: -1%;
 	width: 100vw;
 	background-color: black;
+	z-index: 1;
 }
 
 nav div {
@@ -119,6 +120,7 @@ button.ativar .linha:nth-child(2){
 .div-menu {
 	position: sticky;
 	top: 4.7%;
+	z-index: 1;
 }
 
 div .menu {
@@ -175,10 +177,41 @@ section .fotoPerfil {
 	background-color: var(--cor4);
 }
 
+section .fotoPerfil:hover {
+	background-color: var(--cor3);
+	border: 3px solid var(--cor3);
+}
+
 /* Configurações da seção Projetos */
 
 #projetos {
-	display: none;
+	visibility: visible;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#projetos ul .hidden img {
+	display: block;
+	margin: auto;
+	overflow-y: hidden;
+}
+
+/* Configurações da seção Projetos: animações */
+
+.hidden {
+	opacity: 0;
+	filter: blur(15px);
+	transition: all 2s;
+	transform: translateX(-100%);
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transition: all 2s;
+	transform: translateX(0%);
 }
 
 /* Configurações da seção redes sociais */
@@ -187,26 +220,10 @@ section .fotoPerfil {
 	display: none;
 }
 
-/* ------------------------------------- */
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100vw;
-	height: 5vh;
-	background-color: var(--cor4);
-}
-
-footer p {
-	font-style: italic;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bolder;
-}
-
 /* Configurações de Contato */
 
 #contato {
-	display: none;
+	display: block;
 	max-width: 800px;
 	margin: 20px auto;
   }
@@ -243,6 +260,20 @@ footer p {
 	align-items: center;
   }
 
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 5vh;
+	background-color: var(--cor4);
+}
+
+footer p {
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+}
 /* quemSouEu
 projetos
 contato */
