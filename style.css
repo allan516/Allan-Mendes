@@ -177,8 +177,17 @@ section .fotoPerfil {
 
 /* Configurações da seção Projetos */
 
+#projetos {
+	display: none;
+}
 
-/* ------------------------------- */
+/* Configurações da seção redes sociais */
+
+#redesSociais {
+	display: none;
+}
+
+/* ------------------------------------- */
 footer {
 	display: flex;
 	align-items: center;
