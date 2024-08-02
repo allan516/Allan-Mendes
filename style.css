@@ -245,9 +245,8 @@ section .fotoPerfil:hover {
 /* Configurações de Contato */
 
 #contato {
-	display: block;
 	max-width: 700px;
-	margin: 20px auto;
+	margin: 20px;
 	background-color: var(--cor1);
 	color: black;
 	border-radius: 8px;
