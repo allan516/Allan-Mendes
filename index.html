@@ -32,14 +32,14 @@
 
     <main>
         
-        <section class="perfil" id="quemSouEu">
+        <section class="perfil secoes" id="quemSouEu">
             <article>
                 <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
-            <h1>Olá,</h1>
-            <p>
-                Seja bem vindo(a) ao meu Portifólio.
-                Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas linguagens em que estou trabalhando .
-            </p>
+                <h1>Olá...</h1>
+                <p>
+                    Seja bem vindo(a) ao meu Portifólio.
+                    Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas linguagens em que estou trabalhando.
+                </p>
             </article>
         </section>
 
@@ -51,8 +51,10 @@
                     <p>
                         Esse projeto utiliza link em forma de botões que ao selecionados mostram dentro do iframe, para promover minhas redes sociais, <a href="https://allan516.github.io/redes-sociais/">Acesse</a>.
                     </p>
-
-                    <img src="imagens/redes-sociaisP.jpg" alt="Projeto redes sociais">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/redes-sociais.jpg" type="image/jpg">
+                        <img src="imagens/redes-sociaisP.jpg" alt="projeto redes sociais">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Página de Cadastro</h2>
@@ -60,28 +62,36 @@
                         Trabalhando com formulários, essa página simula uma ficha de cadastro para venda de veículo.
                         <a href="https://allan516.github.io/Site/projetos/formulario/index.html">Acesse a página.</a>
                     </p>
-
-                    <img src="imagens/cadastroP.jpg" alt="Projeto página de cadastro">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/cadastro.jpg" type="image/jpg">
+                        <img src="imagens/cadastroP.jpg" alt="projeto cadastro">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Projeto Contato</h2>
                     <p>Mais formulários. Este projeto consiste em criar uma página de contato, abordando o posicionamento de imagens, opacidade e outros, criando uma experiência atraente. <a href="https://allan516.github.io/Site/projetos/contato/index.html">Ir para página.</a> </p>
-
-                    <img src="imagens/contatoP.jpg" alt="Projeto contato">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/contato.jpg" type="image/jpg">
+                        <img src="imagens/contatoP.jpg" alt="projeto contato">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Media Query</h2>
                     <p>
                         Projeto focado na implementação de media queries para tornar o site responsivo. <a href="https://allan516.github.io/media-query/">Acesse</a>.
                     </p>
-
-                    <img src="imagens/media-queryP.jpg" alt="Projeto media query">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/media-query.jpg" type="image/jpg">
+                        <img src="imagens/media-queryP.jpg" alt="projeto media query">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Projeto Réplica Orkut</h2>
                     <p>Meu projeto é uma replica do Orkut, a icônica rede social que marcou a era da internet nos anos 2000. Esta réplica recria fielmente sua aparência. <a href="https://allan516.github.io/orkut/"> Ir para página</a></p>
-
-                    <img src="imagens/orkutP.jpg" alt="Projeto réplica do Orkut">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/orkut.jpg" type="image/jpg">
+                        <img src="imagens/orkutP.jpg" alt="projeto orkut">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Caixa de Login</h2>
@@ -89,20 +99,23 @@
                         O projeto login funciona em diferentes telas, nesse projeto tive a oportunidade de aprender um pouco mais sobre media query. <a href="https://allan516.github.io/projeto-login/">Acesse</a>.
                     </p>
                     <picture>
-
-                    <img src="imagens/projeto-loginP.jpg" alt="Projeto login">
+                        <source media="(min-width: 768px)" srcset="imagens/projeto-login.jpg" type="image/jpg">
+                        <img src="imagens/projeto-loginP.jpg" alt="projeto login">
+                    </picture>
                 </li>
                 <li class="hidden">
                     <h2>Primeiro Site</h2>
                     <p>O meu primeiro site é um projeto pessoal que representa o início da minha jornada na criação e desenvolvimento. <a href="https://allan516.github.io/Site/"> Acesse</a>.</p>
-
-                    <img src="imagens/siteP.jpg" alt="Meu primeiro site">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="imagens/site.jpg" type="image/jpg">
+                        <img src="imagens/siteP.jpg" alt="projeto site">
+                    </picture>
                 </li>
             </ul>
         </section>
-
-        <section class="secoes" id="contato">
-            <h1>Contato</h1>
+        <h1>Contato</h1>
+        <section  id="contato">
+            
              <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
                 <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
                 <input type="hidden" name="redirectTo" value="https://allan516.github.io/pag-contato/">
@@ -126,7 +139,7 @@
 
         </section>
         
-        <section id="redesSociais">
+        <section id="redesSociais" class="secoes">
             <h1>redesSociais</h1>
             <a href=""><img src="imagens/linkedin.png" alt="logo linkedIn"></a>
             <a href=""><img src="imagens/instagram.png" alt="logo instagram"></a>

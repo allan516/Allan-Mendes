@@ -43,14 +43,23 @@ table {
 	border-spacing: 0;
 }
 
+/* Configurações Gerais */
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+}
+
+/* Configurando a largura máxima */
+.secoes {
+	max-width: 768px;
+	margin: auto;
+}
 /* Paleta de cores */
 :root {
-	--cor1: #DA3FAA;
-	--cor2: #C8C8C8;
-	--cor3: #282828;
-	--cor4: #787878;
-	--cor5: #02FDDD;
-	--cor6: #6FD04D;
+	--cor1: #C8C8C8;
+	--cor2: #282828;
+	--cor3: #787878;
+	--cor4: #02FDDD;
 }
 
 body {
@@ -59,11 +68,16 @@ body {
 	justify-content: space-between;
 }
 
+h1 {
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
 /* Configurações do cabeçalho */
 .header {
-	width: 100vw;
+	width: 100%;
 	height: 15vh;
-	background-color: var(--cor3);
+	background-color: var(--cor2);
 }
 
 /* Configurações do botão de menu */
@@ -71,7 +85,7 @@ body {
 nav {
 	position: sticky;
 	top: -1%;
-	width: 100vw;
+	width: 100%;
 	background-color: black;
 	z-index: 1;
 }
@@ -146,8 +160,8 @@ div .menu li {
 }
 
 .menu li:hover {
-	background-color: var(--cor3);
-	color: var(--cor5);
+	background-color: var(--cor2);
+	color: var(--cor4);
 }
 
 .menu li a {
@@ -156,30 +170,31 @@ div .menu li {
 }
 /* Configurações da seção perfil */
 main {
-	width: 100vw;
+	width: 100%;
 	background-color: white;
 	min-height: 1200px;
 }
 
 main .perfil {
-    /* max-width: 768px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     padding: 20px;
-    margin: 20px auto;
+    margin: 50px auto;
     color: black;
     text-align: center; 
 }
 
 section .fotoPerfil {
-    display: block;
-    margin: 15px auto;
-    border: 3px solid var(--cor4);
+    margin: 15px;
+    border: 3px solid var(--cor3);
     border-radius: 50%;
-	background-color: var(--cor4);
+	background-color: var(--cor3);
 }
 
 section .fotoPerfil:hover {
-	background-color: var(--cor3);
-	border: 3px solid var(--cor3);
+	background-color: var(--cor2);
+	border: 3px solid var(--cor2);
 }
 
 /* Configurações da seção Projetos */
@@ -195,12 +210,19 @@ section .fotoPerfil:hover {
 #projetos ul .hidden img {
 	display: block;
 	margin: auto;
-	overflow-y: hidden;
+}
+
+#projetos ul .hidden p, h2, h1 {
+	display: block;
+	margin: 10px;
+	text-align: center;
+	padding: 5px;
 }
 
 /* Configurações da seção Projetos: animações */
 
 .hidden {
+	margin-bottom: 150px;
 	opacity: 0;
 	filter: blur(15px);
 	transition: all 2s;
@@ -224,8 +246,11 @@ section .fotoPerfil:hover {
 
 #contato {
 	display: block;
-	max-width: 800px;
+	max-width: 700px;
 	margin: 20px auto;
+	background-color: var(--cor1);
+	color: black;
+	border-radius: 8px;
   }
   
   fieldset {
@@ -242,14 +267,18 @@ section .fotoPerfil:hover {
   }
   
   .enviar {
-	background-color: #420283; 
-	color: #fff;
+	width: 30vw;
+	display: block;
+	margin: 5px auto;
+	background-color: var(--cor2); 
+	color: var(--cor4);
 	border-radius: 3px;
 	padding: 5px;
   }
   
   .enviar:hover{
-	background-color: mediumpurple; 
+	background-color: rgba(211, 211, 211, 0.377);
+	color: black;
   }
   input, textarea, label {
 	margin: 10px;
@@ -264,15 +293,16 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
+	width: 100%;
 	height: 5vh;
-	background-color: var(--cor4);
+	background-color: black;
 }
 
 footer p {
 	font-style: italic;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
+	color: white;
 }
 /* quemSouEu
 projetos
