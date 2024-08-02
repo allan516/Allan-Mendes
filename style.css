@@ -59,7 +59,6 @@ table {
 	--cor1: #C8C8C8;
 	--cor2: #282828;
 	--cor3: #787878;
-	--cor4: #02FDDD;
 }
 
 body {
@@ -70,6 +69,12 @@ body {
 
 h1 {
 	font-size: 2rem;
+	font-weight: bolder;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 	font-weight: bolder;
 }
 
@@ -100,7 +105,7 @@ nav button {
 	align-items: center;
 	justify-content: center;
 	height: 5vh;
-	margin: 5px 0;
+	margin: 5px ;
 	border: 1px solid lightgray;
 	background-color: black;
 	cursor: pointer;
@@ -113,7 +118,7 @@ nav button {
 	width: 16px;
 	height: 3px;
 	transform-origin: center;
-	transition: 0.2s;
+	transition: 0.3s;
 }
 
 button.ativar .linha:nth-child(1){
@@ -141,7 +146,7 @@ div .menu {
 	visibility: hidden;
 	position: absolute;
 	background-color: rgba(255, 255, 255, 0.89);
-	width: 100vw;
+	width: 100%;
 	height: 0;
 	transition: .6s;
 	text-align: center;
@@ -161,7 +166,7 @@ div .menu li {
 
 .menu li:hover {
 	background-color: var(--cor2);
-	color: var(--cor4);
+	color: white;
 }
 
 .menu li a {
@@ -200,11 +205,7 @@ section .fotoPerfil:hover {
 /* Configurações da seção Projetos */
 
 #projetos {
-	visibility: visible;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	display: none;
 }
 
 #projetos ul .hidden img {
@@ -225,26 +226,21 @@ section .fotoPerfil:hover {
 	margin-bottom: 150px;
 	opacity: 0;
 	filter: blur(15px);
-	transition: all 2s;
+	transition: all .5s;
 	transform: translateX(-100%);
 }
 
 .show {
 	opacity: 1;
 	filter: blur(0);
-	transition: all 2s;
+	transition: all 1.5s;
 	transform: translateX(0%);
-}
-
-/* Configurações da seção redes sociais */
-
-#redesSociais {
-	display: none;
 }
 
 /* Configurações de Contato */
 
 #contato {
+	display: none;
 	max-width: 700px;
 	margin: 20px;
 	background-color: var(--cor1);
@@ -270,13 +266,13 @@ section .fotoPerfil:hover {
 	display: block;
 	margin: 5px auto;
 	background-color: var(--cor2); 
-	color: var(--cor4);
+	color: white;
 	border-radius: 3px;
 	padding: 5px;
   }
   
   .enviar:hover{
-	background-color: rgba(211, 211, 211, 0.377);
+	background-color: white;
 	color: black;
   }
   input, textarea, label {
@@ -287,6 +283,9 @@ section .fotoPerfil:hover {
 	flex-direction: row;
 	align-items: center;
   }
+
+
+  /* Configurações do rodapé */
 
 footer {
 	display: flex;
@@ -303,6 +302,3 @@ footer p {
 	font-weight: bolder;
 	color: white;
 }
-/* quemSouEu
-projetos
-contato */

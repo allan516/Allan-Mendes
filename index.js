@@ -1,5 +1,9 @@
 const menu = document.querySelector('.menu');
 const elementos = document.querySelectorAll('.hidden');
+const projetos = document.getElementById('projetos');
+const contato = document.getElementById('contato');
+const perfil = document.getElementById('quemSouEu');
+const clicks = document.querySelectorAll('.click');
 
 const myObserver = new IntersectionObserver((entrada) => {
   entrada.forEach((elemento) => {
@@ -29,13 +33,40 @@ function mostraMenu() {
    }
 }
 
-const clicks = document.querySelectorAll('.click');
-
 clicks.forEach(click => {
     click.addEventListener('click', () => {
         menu.classList.remove('mostrar');
         menu.style.visibility = 'hidden';
         const btn = document.getElementById('btn-menu');
         btn.classList.toggle('ativar');
+        if (click.classList.contains('projects')) {
+  
+          if (projetos.style.display === 'none' || projetos.style.display === '') {
+            projetos.style.display = 'block';
+            contato.style.display = 'none';
+            perfil.style.display = 'none';
+            
+          }
+        }
+
+        if (click.classList.contains('mostrar-perfil') || click.classList.contains('inicio')) {
+  
+          if (perfil.style.display === 'none' || perfil.style.display === '') {
+            perfil.style.display = 'block';
+            contato.style.display = 'none';
+            projetos.style.display = 'none';
+            
+          }
+        }
+
+        if (click.classList.contains('mostrar-contato')) {
+  
+          if (contato.style.display === 'none' || contato.style.display === '') {
+            contato.style.display = 'block';
+            perfil.style.display = 'none';
+            projetos.style.display = 'none';
+            
+          }
+        }
     });
 });
