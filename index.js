@@ -3,6 +3,12 @@ const elementos = document.querySelectorAll('.hidden');
 const projetos = document.getElementById('projetos');
 const contato = document.getElementById('contato');
 const perfil = document.getElementById('quemSouEu');
+
+
+const sobreMim = document.getElementById('sobreMim');
+const formatura = document.getElementById('formatura');
+
+
 const clicks = document.querySelectorAll('.click');
 
 const myObserver = new IntersectionObserver((entrada) => {
@@ -43,19 +49,23 @@ clicks.forEach(click => {
   
           if (projetos.style.display === 'none' || projetos.style.display === '') {
             projetos.style.display = 'block';
+
             contato.style.display = 'none';
             perfil.style.display = 'none';
-            
+            sobreMim.style.display = 'none';
+            formatura.style.display = 'none';
           }
         }
 
-        if (click.classList.contains('mostrar-perfil') || click.classList.contains('inicio')) {
+        if (click.classList.contains('inicio')) {
   
           if (perfil.style.display === 'none' || perfil.style.display === '') {
             perfil.style.display = 'block';
+
             contato.style.display = 'none';
             projetos.style.display = 'none';
-            
+            sobreMim.style.display = 'none';
+            formatura.style.display = 'none';
           }
         }
 
@@ -63,8 +73,35 @@ clicks.forEach(click => {
   
           if (contato.style.display === 'none' || contato.style.display === '') {
             contato.style.display = 'block';
+
             perfil.style.display = 'none';
             projetos.style.display = 'none';
+            sobreMim.style.display = 'none';
+            formatura.style.display = 'none';
+          }
+        }
+
+        if (click.classList.contains('sobreMin')) {
+  
+          if (sobreMim.style.display === 'none' || sobreMim.style.display === '') {
+            sobreMim.style.display = 'block';
+
+            perfil.style.display = 'none';
+            projetos.style.display = 'none';
+            contato.style.display = 'none';
+            formatura.style.display = 'none';
+          }
+        }
+
+        if (click.classList.contains('formacao')) {
+  
+          if (formatura.style.display === 'none' || formatura.style.display === '') {
+            formatura.style.display = 'block';
+
+            perfil.style.display = 'none';
+            projetos.style.display = 'none';
+            contato.style.display = 'none';
+            sobreMim.style.display = 'none';
             
           }
         }
