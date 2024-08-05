@@ -82,7 +82,7 @@ a {
 .header {
 	width: 100%;
 	height: 15vh;
-	background-image: linear-gradient(to bottom, black, var(--cor2), black);
+	background-image: linear-gradient(to bottom, black, var(--cor3), black);
 }
 
 /* Configurações do botão de menu */
@@ -118,7 +118,7 @@ nav button {
 	width: 16px;
 	height: 3px;
 	transform-origin: center;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 button.ativar .linha:nth-child(1){
@@ -213,8 +213,24 @@ section .fotoPerfil:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 50vh;
+	justify-content: start;
+}
+
+#sobreMim p {
+	padding: 10px;
+}
+
+#sobreMim ol li {
+	text-align: left;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.61);
+	background-color: var(--cor1);
+}
+
+#sobreMim ol li span {
+	font-weight: bolder;
 }
 
 /* Configurações da seção Formação */

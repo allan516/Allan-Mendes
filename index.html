@@ -22,20 +22,32 @@
 
     <div class="div-menu">
         <ul class="menu">
-            <li><a class="click inicio" href="#home">Início</a></li>
-            <li><a class="click sobreMin" href="#sobreMim">Sobre Mim</a></li>
-            <li><a class="click formacao" href="#formatura">Formação</a></li>
-            <li><a class="click projects" href="#projetos">Projetos</a></li>
-            <li><a class="click mostrar-contato" href="#contato">Contato</a></li>
-            <li><a class="click" href="https://www.linkedin.com/in/allan-mendes-437182283" target="_blank">LinkedIn &#128279;</a></li>
-            <li><a class="click" href="https://github.com/allan516" target="_blank">GitHub &#128279;</a></li>
+            <li>
+                <a class="click inicio" href="#home">Início</a>
+            </li>
+            <li>
+                <a class="click sobreMin" href="#sobreMim">Sobre Mim</a>
+            </li>
+            <li>
+                <a class="click formacao" href="#formatura">Formação</a>
+            </li>
+            <li>
+                <a class="click projects" href="#projetos">Projetos</a>
+            </li>
+            <li>
+                <a class="click mostrar-contato" href="#contato">Contato</a>
+            </li>
+            <li>
+                <a class="click" href="https://www.linkedin.com/in/allan-mendes-437182283" target="_blank">LinkedIn &#128279;</a>
+            </li>
+            <!-- <li><a class="click" href="https://github.com/allan516" target="_blank">GitHub &#128279;</a></li> -->
         </ul>
     </div>
 
     <main>
         
         <section class="perfil secoes" id="quemSouEu">
-            <article>
+            <article class="hidden">
                 <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
                 <h1>Olá...</h1>
                 <p>
@@ -46,15 +58,47 @@
         </section>
 
         <section class="sobre-mim secoes" id="sobreMim">
-            <article>
-                <p>Um link Sobre mim: que fale sobre você, hobbies etc;</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aspernatur mollitia molestias consequuntur fugiat esse numquam est, culpa voluptatem odio impedit quia earum vel blanditiis ex a minus amet quo voluptas dolorem? Dolorem consequuntur cumque voluptatibus eligendi exercitationem ipsam repudiandae necessitatibus earum quam magni repellendus, ad molestiae, culpa sapiente aliquid.</p>
+            <article class="hidden">
+                <h1>Sobre Mim</h1>
+                <p>
+                    Meu nome é Allan e sou apaixonado por tecnologia e desenvolvimento de software. A programação sempre esteve presente em minha vida, embora eu tenha notado isso recentemente. Um exemplo são os códigos do MK3 Ultimate, no Super Nintendo (nostalgia), que eu tinha no meu caderno, e os bugs dos jogos que eu usava a meu favor &#128517;. Talvez eu esteja forçando, querendo relacionar uma coisa com a outra &#128514;, mas pra mim esse foi o meu começo. Eram bons tempos, de lá pra cá muita coisa mudou, o Video Game já não é mais o mesmo e os jogos evoluiram muito, porém as anotações continuam aqui; a diferença é que agora são sintaxes de linguagens de programação, sempre estudando. 
+                </p>
+
+                <p>
+                    enfim, sou uma pessoa curiosa e determinada, sempre em busca de aprender algo novo. Gosto muito de resolver problemas e encontrar soluções criativas, seja no mundo da programação ou em qualquer outra área da minha vida. 
+                </p>
+
+                <p>
+                    Além do meu interesse por tecnologia, tenho alguns hobbies e interesses que me mantêm motivado e inspirado:
+                </p>
+
+                <ol>
+                    <li>
+                        <span>&#10004; Leitura:</span> 
+                    </li>
+                    <li>
+                        Gosto de ler livros de ficção científica e fantasia. Alguns dos meus autores favoritos são H.P Lovecraft e Edigar Allan Poe.
+                    </li>
+
+                    <li>
+                        <span>&#10004; Atividades ao Ar Livre:</span>
+                    </li>
+                    <li>
+                        Gosto de fazer trilhas e acampar, aproveitando a natureza para recarregar as energias.
+                    </li>
+
+                    <li> <span>&#10004; Musculação</span></li>
+                </ol>
+
+                <p>
+                    Estou sempre aberto a novas experiências e desafios, buscando crescer tanto profissionalmente quanto pessoalmente. Se quiser saber mais sobre mim ou apenas trocar uma ideia entre em contato comigo.
+                </p>
             </article>
 
         </section>
 
         <section class="formacao secoes" id="formatura">
-            <article>
+            <article class="hidden">
                 <p>Um link sobre sua formação educacional, idiomas;</p>
             </article>
         </section>
@@ -123,11 +167,11 @@
             </ul>
         </section>
         
-        <section  id="contato">
+        <section class="hidden" id="contato">
             <h1>Contato</h1>
              <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
                 <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
-                <input type="hidden" name="redirectTo" value="https://allan516.github.io/pag-contato/">
+                <input type="hidden" name="redirectTo" value="https://allan516.github.io/atividade">
                 <fieldset>
                     <span>
                       <label for="inome">Nome </label>
