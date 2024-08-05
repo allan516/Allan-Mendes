@@ -194,7 +194,7 @@ section .fotoPerfil {
   margin: 15px;
   border: 3px solid var(--cor3);
   border-radius: 50%;
-	background-color: var(--cor3);
+  background-color: var(--cor3);
 }
 
 section .fotoPerfil:hover {
@@ -225,7 +225,6 @@ section .fotoPerfil:hover {
 	padding: 20px;
 	margin: 10px;
 	border-radius: 8px;
-	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.61);
 	background-color: var(--cor1);
 }
 
