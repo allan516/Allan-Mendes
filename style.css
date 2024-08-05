@@ -258,6 +258,10 @@ section .fotoPerfil:hover {
 	border-radius: 8px;
 }
 
+.linkRepositorio a {
+	color: white;
+}
+
 /* Configurações da seção Projetos: animações */
 
 .hidden {
