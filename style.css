@@ -277,7 +277,7 @@ section .fotoPerfil:hover {
 
 #projetos ul .hidden p, h2, h1 {
 	display: block;
-	margin: 10px;
+	margin-top: 50px;
 	text-align: center;
 	padding: 5px;
 }
