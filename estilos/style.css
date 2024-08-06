@@ -220,16 +220,26 @@ section .fotoPerfil:hover {
 	padding: 10px;
 }
 
+#sobreMim ol {
+  background-color: aliceblue;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px var(--cor1);
+  margin: 10px;
+}
+
 #sobreMim ol li {
 	text-align: left;
 	padding: 20px;
 	margin: 10px;
-	border-radius: 8px;
-	background-color: var(--cor1);
 }
 
 #sobreMim ol li span {
-	font-weight: bolder;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+	border-radius: 8px;
+	background-image: linear-gradient(to right, black, transparent);
+	
 }
 
 /* Configurações da seção Formação */
@@ -250,6 +260,10 @@ section .fotoPerfil:hover {
 #formatura article ul {
 	list-style-type: disc;
 	padding: 20px 50px;
+	background-color: aliceblue;
+	margin: 10px;
+	border-radius: 8px;
+	box-shadow: 1px 1px 1px 1px var(--cor1);
 }
 
 #formatura .lista {
@@ -320,9 +334,10 @@ section .fotoPerfil:hover {
 	top: 40vh;
 	max-width: 700px;
 	margin: 20px;
-	background-color: var(--cor1);
+	background-color: aliceblue;
 	color: black;
 	border-radius: 8px;
+	box-shadow: 1px 1px 1px 1px var(--cor1);
   }
   
   fieldset {
