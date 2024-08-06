@@ -236,7 +236,7 @@ section .fotoPerfil:hover {
 
 #formatura {
 	display: none;
-	text-align: center;
+	text-align: left;
 }
 
 #formatura article {
@@ -245,6 +245,36 @@ section .fotoPerfil:hover {
 	align-items: center;
 	justify-content: center;
 	height: 50vh;
+}
+
+#formatura article ul {
+	list-style-type: disc;
+	padding: 20px 50px;
+}
+
+#formatura a {
+	background-color: var(--cor2);
+	color: white;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+#formatura a:hover {
+	background-color: white;
+	color: var(--cor2);
+	border: 1px solid black;
+}
+
+.lista {
+	list-style-type: none;
+}
+
+.lista span {
+	background-image: linear-gradient(to right, var(--cor2), transparent);
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
 }
 
 /* Configurações da seção Projetos */
