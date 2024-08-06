@@ -181,9 +181,9 @@ main {
 }
 
 main .perfil {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   margin: 50px auto;
   color: black;
@@ -275,11 +275,12 @@ section .fotoPerfil:hover {
 	margin: auto;
 }
 
-#projetos ul .hidden p, h2, h1 {
+#projetos ul .hidden h2, h1 {
 	display: block;
 	margin-top: 50px;
 	text-align: center;
 	padding: 5px;
+	font-weight: bold;
 }
 
 .linkRepositorio {
@@ -369,6 +370,7 @@ footer {
 	justify-content: center;
 	width: 100%;
 	height: 5vh;
+	padding: 6px 0;
 	background-color: black;
 }
 
