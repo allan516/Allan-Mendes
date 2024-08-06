@@ -1,0 +1,36 @@
+
+nav {
+    display: none;
+}
+
+.div-menu {
+	position: sticky;
+	top: 0%;
+	z-index: 1;
+}
+
+.div-menu .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw; 
+    height: 15px;
+    padding: 15px 0;
+    background-color: black;
+}
+
+.div-menu .menu li{
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+
+#contato {
+	margin: 20px auto;
+
+  }
+  
+  .enviar {
+	width: 20vw;
+  }
