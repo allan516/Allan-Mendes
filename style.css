@@ -252,20 +252,7 @@ section .fotoPerfil:hover {
 	padding: 20px 50px;
 }
 
-#formatura a {
-	background-color: var(--cor2);
-	color: white;
-	padding: 10px;
-	border-radius: 4px;
-}
-
-#formatura a:hover {
-	background-color: white;
-	color: var(--cor2);
-	border: 1px solid black;
-}
-
-.lista {
+#formatura .lista {
 	list-style-type: none;
 }
 
