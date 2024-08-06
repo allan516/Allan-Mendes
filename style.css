@@ -243,7 +243,7 @@ section .fotoPerfil:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	height: 50vh;
 }
 
