@@ -9,7 +9,7 @@ nav {
 }
 
 .div-menu .menu {
-    visibility: visible;
+    visibility: visible !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
