@@ -43,9 +43,10 @@ clicks.forEach(click => {
       if(window.innerWidth <= 810){
         menu.classList.remove('mostrar');
         menu.style.visibility = 'hidden';
-      }
         const btn = document.getElementById('btn-menu');
         btn.classList.toggle('ativar');
+      }
+        
         if (click.classList.contains('projects')) {
   
           if (projetos.style.display === 'none' || projetos.style.display === '') {
