@@ -1,4 +1,3 @@
-
 const menu = document.querySelector('.menu');
 const elementos = document.querySelectorAll('.hidden');
 const projetos = document.getElementById('projetos');
@@ -25,7 +24,6 @@ const myObserver = new IntersectionObserver((entrada) => {
 elementos.forEach((elementos) => myObserver.observe(elementos));
 
 function mostraMenu() {
-  
   if(menu.classList.contains('mostrar')) {
     menu.classList.remove('mostrar');
     menu.style.visibility = 'hidden';
@@ -42,10 +40,13 @@ function mostraMenu() {
 
 clicks.forEach(click => {
     click.addEventListener('click', () => {
+      if(window.innerWidth <= 810){
         menu.classList.remove('mostrar');
         menu.style.visibility = 'hidden';
         const btn = document.getElementById('btn-menu');
         btn.classList.toggle('ativar');
+      }
+        
         if (click.classList.contains('projects')) {
   
           if (projetos.style.display === 'none' || projetos.style.display === '') {
