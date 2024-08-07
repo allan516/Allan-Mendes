@@ -1,3 +1,4 @@
+
 const menu = document.querySelector('.menu');
 const elementos = document.querySelectorAll('.hidden');
 const projetos = document.getElementById('projetos');
