@@ -58,7 +58,7 @@ table {
 :root {
 	--cor1: #C8C8C8;
 	--cor2: #282828;
-	--cor3: #787878;
+	--cor3: #f5f5f5;
 	--cor4: #42c16a42;
 }
 
@@ -66,11 +66,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-h1 {
-	font-size: 2rem;
-	font-weight: bolder;
 }
 
 a {
@@ -81,7 +76,7 @@ a {
 
 p {
 	padding: 15px;
-	text-align: justify;
+	text-align: center;
 }
 
 /* Configurações do cabeçalho */
@@ -186,6 +181,13 @@ main {
 	min-height: 1200px;
 }
 
+main h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 10px;
+	font-weight: bolder;
+}
+
 main .perfil {
   display: flex;
   flex-direction: column;
@@ -214,6 +216,13 @@ section .fotoPerfil:hover {
 	text-align: center;
 }
 
+#sobreMim h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 100px auto 30px auto;
+	font-weight: bolder;
+}
+
 #sobreMim article {
 	display: flex;
 	flex-direction: column;
@@ -222,7 +231,7 @@ section .fotoPerfil:hover {
 }
 
 #sobreMim ol {
-  background-color: whitesmoke;
+  background-color: var(--cor3);
   border-radius: 8px;
   box-shadow: 1px 1px 1px 1px var(--cor1);
   margin: 10px;
@@ -250,6 +259,13 @@ section .fotoPerfil:hover {
 	text-align: left;
 }
 
+#formatura h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 100px auto 30px auto;
+	font-weight: bolder;
+}
+
 #formatura article {
 	display: flex;
 	flex-direction: column;
@@ -261,8 +277,7 @@ section .fotoPerfil:hover {
 #formatura article ul {
 	list-style-type: disc;
 	padding: 20px 30px;
-	padding: 20px 50px;
-	background-color: whitesmoke;
+	background-color: var(--cor3);
 	margin: 10px;
 	border-radius: 8px;
 	box-shadow: 1px 1px 1px 1px var(--cor1);
@@ -291,9 +306,16 @@ section .fotoPerfil:hover {
 	margin: auto;
 }
 
-#projetos ul .hidden h2, h1 {
+#projetos h1 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 100px auto 30px auto;
+	font-weight: bolder;
+}
+
+#projetos ul .hidden h2 {
 	display: block;
-	margin-top: 100px;
+	margin: 100px auto 30px auto;
 	text-align: center;
 	padding: 5px;
 	font-weight: bold;
@@ -302,7 +324,7 @@ section .fotoPerfil:hover {
 .linkRepositorio {
 	background-color: var(--cor2);
 	color: white;
-	padding: 20px;
+	padding: 10px;
 	margin: 20px;
 	border-radius: 8px;
 }
@@ -311,7 +333,7 @@ section .fotoPerfil:hover {
 	color: white;
 }
 
-/* Configurações da seção Projetos: animações */
+/* Configurações das animações */
 
 .hidden {
 	margin-bottom: 150px;
@@ -336,10 +358,15 @@ section .fotoPerfil:hover {
 	top: 40vh;
 	max-width: 700px;
 	margin: 20px;
-	background-color: var(--cor1);
-	color: black;
+	background-color: var(--cor3);
+	color: var(--cor2);
 	border-radius: 8px;
+	border: 1px solid lightslategray;
 	box-shadow: 1px 1px 1px 1px var(--cor1);
+  }
+
+  #contato h1 {
+	margin: 10px;
   }
   
   fieldset {
