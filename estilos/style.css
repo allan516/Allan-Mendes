@@ -316,7 +316,7 @@ section .fotoPerfil:hover {
 
 #projetos ul .hidden h2 {
 	display: block;
-	margin: 100px auto 30px auto;
+	margin: 50px auto 0 auto;
 	text-align: center;
 	padding: 5px;
 	font-weight: bold;
