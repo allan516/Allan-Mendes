@@ -114,6 +114,7 @@ nav button {
 	border: 1px solid lightgray;
 	background-color: black;
 	cursor: pointer;
+ font-family: "Poppins", sans-serif;
 }
 
 .linha {
