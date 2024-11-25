@@ -1,263 +1,319 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon para a aba do navegador -->
-    <link rel="shortcut icon" href="./imagens/favicon-32x32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./imagens/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>Portifólio</title>
     <!-- Estilos principais -->
-    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css" media="all" />
     <!-- Estilos específicos para telas com largura mínima de 810px -->
-    <link rel="stylesheet" media="(min-width: 810px)" href="estilos/media.css">
+    <link
+      rel="stylesheet"
+      media="(min-width: 810px)"
+      href="estilos/media.css"
+    />
+    <script src="./component.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Cabeçalho da página -->
-    <header class="header" id="home">
-    </header>
+    <header class="header" id="home"></header>
     <!-- Menu de navegação -->
     <nav>
-        <div>
-            <button onclick="mostraMenu()" id="btn-menu">
-                <span class="linha"></span>
-                <span class="linha"></span>
-                <span class="linha"></span>
-            </button>
-        </div>
+      <div>
+        <button onclick="mostraMenu()" id="btn-menu">
+          <span class="linha"></span>
+          <span class="linha"></span>
+          <span class="linha"></span>
+        </button>
+      </div>
     </nav>
     <!-- Menu principal -->
     <div class="div-menu">
-        <!-- Links de navegação para as seções da página -->
-        <ul class="menu">
-            <li>
-                <a class="click inicio" href="#home">Início</a>
-            </li>
-            <li>
-                <a class="click sobreMin" href="#sobreMim">Sobre Mim</a>
-            </li>
-            <li>
-                <a class="click formacao" href="#formatura">Formação</a>
-            </li>
-            <li>
-                <a class="click projects" href="#projetos">Portifólio</a>
-            </li>
-            <li>
-                <a class="click mostrar-contato" href="#contato">Contato</a>
-            </li>
-            <!-- Link externo para o LinkedIn -->
-            <li>
-                <a class="click" href="https://www.linkedin.com/in/allan-mendes-437182283" target="_blank">LinkedIn
-                    &#128279;</a>
-            </li>
-            <!-- <li>
+      <!-- Links de navegação para as seções da página -->
+      <ul class="menu">
+        <li>
+          <a class="click inicio" href="#home">Início</a>
+        </li>
+        <li>
+          <a class="click sobreMin" href="#sobreMim">Sobre Mim</a>
+        </li>
+        <li>
+          <a class="click formacao" href="#formatura">Formação</a>
+        </li>
+        <li>
+          <a class="click projects" href="#projetos">Portifólio</a>
+        </li>
+        <li>
+          <a class="click mostrar-contato" href="#contato">Contato</a>
+        </li>
+        <!-- Link externo para o LinkedIn -->
+        <li>
+          <a
+            class="click"
+            href="https://www.linkedin.com/in/allan-mendes-437182283"
+            target="_blank"
+            >LinkedIn &#128279;</a
+          >
+        </li>
+        <!-- <li>
                 <a class="click" href="https://github.com/allan516" target="_blank">GitHub &#128279;</a>
             </li> -->
-        </ul>
+      </ul>
     </div>
 
     <main>
-        <!-- Seção de perfil -->
-        <section class="perfil secoes" id="quemSouEu">
-            <article class="hidden">
-                <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
-                <h1>Olá...</h1>
-                <p>
-                    Seja bem vindo(a).
-                    Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas
-                    linguagens em que estou trabalhando.
-                </p>
-            </article>
-        </section>
-        <!-- Seção "Sobre Mim" -->
-        <section class="sobre-mim secoes" id="sobreMim">
-            <article class="hidden">
-                <h1>Sobre Mim</h1>
+      <!-- Seção de perfil -->
+      <section class="perfil secoes" id="quemSouEu">
+        <article class="hidden">
+          <img
+            class="fotoPerfil"
+            src="imagens/foto.png"
+            alt="foto de apresentação"
+          />
+          <h1>Olá...</h1>
+          <p>
+            Seja bem vindo(a). Aqui você irá encontrar um pouco da minha
+            trajetória, alguns exercícios, projetos e as últimas linguagens em
+            que estou trabalhando.
+          </p>
+        </article>
+      </section>
+      <!-- Seção "Sobre Mim" -->
+      <section class="sobre-mim secoes" id="sobreMim">
+        <article class="hidden">
+          <h1>Sobre Mim</h1>
 
+          <p>
+            Meu nome é Allan e sou apaixonado por tecnologia e desenvolvimento
+            de software. Sou uma pessoa curiosa e determinada, sempre em busca
+            de aprender algo novo. Gosto muito de resolver problemas e encontrar
+            soluções criativas, seja no mundo da programação ou em qualquer
+            outra área da minha vida.
+          </p>
 
-                <p>
-                    Meu nome é Allan e sou apaixonado por tecnologia e desenvolvimento de software.
-                    Sou uma pessoa curiosa e determinada, sempre em busca de aprender algo novo. Gosto muito de resolver
-                    problemas e encontrar soluções criativas, seja no mundo da programação ou em qualquer outra área da
-                    minha vida.
-                </p>
-
-                <p>
-                    Além do meu interesse por tecnologia, tenho alguns hobbies e interesses que me mantêm motivado e
-                    inspirado:
-                </p>
-                <!-- Lista ordenada de hobbies e interesses -->
-                <ol>
-                    <li>
-                        <span>&#10004; Leitura:</span>
-                        <!-- Lista não ordenada dentro da lista ordenada -->
-                        <ul>
-                            <li>
-                                Alguns dos meus autores favoritos são H.P Lovecraft e Edigar Allan Poe.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <span>&#10004; Atividades ao Ar Livre:</span>
-                        <ul>
-                            <li>
-                                Gosto de fazer trilhas e acampar, aproveitando a natureza para recarregar as energias.
-                            </li>
-                        </ul>
-                    <li> <span>&#10004; Musculação</span></li>
-                </ol>
-
-                <p>
-                    Estou sempre aberto a novos desafios, buscando crescer tanto profissionalmente quanto pessoalmente.
-                    Se quiser saber mais sobre mim ou apenas trocar uma ideia entre em contato comigo.
-                </p>
-            </article>
-
-        </section>
-        <!-- Seção de formação e certificações -->
-        <section class="formacao secoes" id="formatura">
-            <article>
-                <h1 class="hidden">Educação e Certificações</h1>
-                <ul class="hidden">
-                    <li class="lista">
-                        <span>Uninter:</span>
-                        <ul>
-                            <li>
-                                Tecnólogo em Análise e Desenvolvimento de Sistemas
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="lista">
-                        <span>Udemy:</span>
-                        <ul>
-                            <li>
-                                HTML e css: O INÍCIO (INCLUINDO 5 Projetos).
-                            </li>
-                            <li>
-                                Curso de javascript E Typescript do básico ao avançado JS/TS (146 HORAS, EM CURSO).
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="lista">
-                        <span>Curso em Vídeo:</span>
-                        <ul>
-                            <li>
-                                HTML5 E CSS3 (5 módulos totalizando 200 horas).
-                            </li>
-                            <li>
-                                Javascript (40 horas).
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <!-- Seção de projetos com links para visualização -->
-        <section id="projetos" class="secoes">
-            <h1>Projetos</h1>
-            <ul>
-                <li class="hidden">
-                    <picture>
-                        <!-- será carregada em dispositivos com largura mínima de 768px -->
-                        <source media="(min-width: 768px)" srcset="imagens/redes-sociais.jpg" type="image/jpg">
-                        <!-- Imagem padrão que será carregada -->
-                        <img src="imagens/redes-sociaisP.jpg" alt="projeto redes sociais">
-                    </picture>
-                    <h2>Projeto Redes Sociais</h2>
-                    <p>
-                        Esse projeto utiliza link em forma de botões que ao selecionados mostram dentro do iframe, para
-                        promover minhas redes sociais, <a href="https://allan516.github.io/redes-sociais/">Acesse</a>.
-                    </p>
+          <p>
+            Além do meu interesse por tecnologia, tenho alguns hobbies e
+            interesses que me mantêm motivado e inspirado:
+          </p>
+          <!-- Lista ordenada de hobbies e interesses -->
+          <ol>
+            <li>
+              <span>&#10004; Leitura:</span>
+              <!-- Lista não ordenada dentro da lista ordenada -->
+              <ul>
+                <li>
+                  Alguns dos meus autores favoritos são H.P Lovecraft e Edigar
+                  Allan Poe.
                 </li>
-                <li class="hidden">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="imagens/cadastro.jpg" type="image/jpg">
-                        <img src="imagens/cadastroP.jpg" alt="projeto cadastro">
-                    </picture>
-                    <h2>Página de Cadastro</h2>
-                    <p>
-                        Trabalhando com formulários, essa página simula uma ficha de cadastro para venda de veículo.
-                        <a href="https://allan516.github.io/Site/projetos/formulario/index.html">Acesse a página.</a>
-                    </p>
-                </li>
-                <li class="hidden">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="imagens/contato.jpg" type="image/jpg">
-                        <img src="imagens/contatoP.jpg" alt="projeto contato">
-                    </picture>
-                    <h2>Projeto Contato</h2>
-                    <p>
-                        Mais formulários. Este projeto consiste em criar uma página de contato, abordando o
-                        posicionamento de imagens, opacidade e outros, criando uma experiência atraente.
-                        <a href="https://allan516.github.io/Site/projetos/contato/index.html">Ir para página.</a>
-                    </p>
-                </li>
-                <li class="hidden">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="imagens/media-query.jpg" type="image/jpg">
-                        <img src="imagens/media-queryP.jpg" alt="projeto media query">
-                    </picture>
-                    <h2>Media Query</h2>
-                    <p>
-                        Projeto focado na implementação de media queries para tornar o site responsivo.
-                        <a href="https://allan516.github.io/media-query/">Acesse</a>.
-                    </p>
-                </li>
-                <li class="hidden">
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="imagens/orkut.jpg" type="image/jpg">
-                        <img src="imagens/orkutP.jpg" alt="projeto orkut">
-                    </picture>
-                    <h2>Projeto Réplica Orkut</h2>
-                    <p>
-                        Meu projeto é uma replica do Orkut, a icônica rede social que marcou a era da internet nos anos
-                        2000. Esta réplica recria fielmente sua aparência.
-                        <a href="https://allan516.github.io/orkut/"> Ir para página</a>
-                    </p>
-                </li>
+              </ul>
+            </li>
 
-                <li class="hidden linkRepositorio">
-                    <p><a href="https://github.com/allan516?tab=repositories" target="_blank">Acesse meu Portifólio /
-                            respositório e veja todos os meus projetos e estudos clicando aqui.&#128279;</a></p>
+            <li>
+              <span>&#10004; Atividades ao Ar Livre:</span>
+              <ul>
+                <li>
+                  Gosto de fazer trilhas e acampar, aproveitando a natureza para
+                  recarregar as energias.
                 </li>
-            </ul>
-        </section>
-        <!-- Seção de contato com um formulário -->
-        <section class="hidden" id="contato">
-            <h1>Contato</h1>
-            <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
-                <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
-                <input type="hidden" name="redirectTo" value="https://allan516.github.io/atividade">
-                <fieldset>
-                    <!-- Campos para nome e email -->
-                    <span>
-                        <label for="inome">Nome </label>
-                        <input type="text" name="name" id="inome" placeholder=" Seu nome" required autocomplete="name">
-                    </span> <br>
-                    <span>
-                        <label for="iemail">Email </label>
-                        <input type="email" name="email" id="iemail" placeholder=" Email" required autocomplete="email">
-                    </span><br>
-                    <!-- Campo de textarea para mensagem -->
-                    <span class="mensagem">
-                        <label for="itext">Mensagem</label>
-                        <textarea name="message" id="itext" rows="3" required minlength="10" maxlength="300"></textarea>
-                    </span><br>
-                    <!-- Botão de enviar formulário -->
-                    <input type="submit" class="enviar" value="Enviar">
-                </fieldset>
-            </form>
+              </ul>
+            </li>
 
-        </section>
+            <li><span>&#10004; Musculação</span></li>
+          </ol>
+
+          <p>
+            Estou sempre aberto a novos desafios, buscando crescer tanto
+            profissionalmente quanto pessoalmente. Se quiser saber mais sobre
+            mim ou apenas trocar uma ideia entre em contato comigo.
+          </p>
+        </article>
+      </section>
+      <!-- Seção de formação e certificações -->
+      <section class="formacao secoes" id="formatura">
+        <article>
+          <h1 class="hidden">Educação e Certificações</h1>
+          <ul class="hidden">
+            <li class="lista">
+              <span>Uninter:</span>
+              <ul>
+                <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
+              </ul>
+            </li>
+            <li class="lista">
+              <span>Udemy:</span>
+              <ul>
+                <li>HTML e css: O INÍCIO (INCLUINDO 5 Projetos).</li>
+                <li>
+                  Curso de javascript E Typescript do básico ao avançado JS/TS
+                  (146 HORAS, EM CURSO).
+                </li>
+              </ul>
+            </li>
+            <li class="lista">
+              <span>Curso em Vídeo:</span>
+              <ul>
+                <li>HTML5 E CSS3 (5 módulos totalizando 200 horas).</li>
+                <li>Javascript (40 horas).</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!-- Seção de projetos com links para visualização -->
+      <section id="projetos" class="secoes">
+        <h1>Projetos</h1>
+        <ul>
+          <li class="hidden">
+            <shadow-dom
+              projetoh2="Projeto Redes Sociais"
+              descricaoProjetoP=" Esse projeto utiliza link em forma de botões que ao selecionados
+              mostram dentro do iframe, para promover minhas redes sociais,"
+              link="https://allan516.github.io/redes-sociais/"
+              nomeProjetoA=" Acesse."
+              caminhoDaImgG="imagens/redes-sociais.jpg"
+              caminhoDaImg="imagens/redes-sociaisP.jpg"
+              descricaoImgAlt=" projeto redes sociais"
+            ></shadow-dom>
+          </li>
+
+          <li class="hidden">
+            <shadow-dom
+              projetoh2="Página de Cadastro"
+              descricaoProjetoP=" Trabalhando com formulários, essa página simula uma ficha de
+              cadastro para venda de veículo."
+              link="https://allan516.github.io/Site/projetos/formulario/index.html"
+              nomeProjetoA=" Acesse a página."
+              caminhoDaImgG="imagens/cadastro.jpg"
+              caminhoDaImg="imagens/cadastroP.jpg"
+              descricaoImgAlt=" projeto cadastro"
+            ></shadow-dom>
+          </li>
+
+          <li class="hidden">
+            <shadow-dom
+              projetoh2="Página Contato"
+              descricaoProjetoP=" Mais formulários. Este projeto consiste em criar uma página de
+              contato, abordando o posicionamento de imagens, opacidade e
+              outros, criando uma experiência atraente."
+              link="https://allan516.github.io/Site/projetos/contato/index.html"
+              nomeProjetoA=" Ir para página."
+              caminhoDaImgG="imagens/contato.jpg"
+              caminhoDaImg="imagens/contatoP.jpg"
+              descricaoImgAlt=" projeto contato"
+            ></shadow-dom>
+          </li>
+
+          <li class="hidden">
+            <shadow-dom
+              projetoh2="Media Query"
+              descricaoProjetoP=" Projeto focado na implementação de media queries para tornar o
+              site responsivo."
+              link="https://allan516.github.io/media-query/"
+              nomeProjetoA=" Acesse."
+              caminhoDaImgG="imagens/media-query.jpg"
+              caminhoDaImg="imagens/media-queryP.jpg"
+              descricaoImgAlt=" projeto media query"
+            ></shadow-dom>
+          </li>
+
+          <li class="hidden">
+            <shadow-dom
+              projetoh2="Projeto Réplica Orkut"
+              descricaoProjetoP="  Meu projeto é uma replica do Orkut, a icônica rede social que
+              marcou a era da internet nos anos 2000. Esta réplica recria
+              fielmente sua aparência."
+              link="https://allan516.github.io/orkut/"
+              nomeProjetoA=" Ir para página."
+              caminhoDaImgG="imagens/orkut.jpg"
+              caminhoDaImg="imagens/orkutP.jpg"
+              descricaoImgAlt=" projeto orkut"
+            ></shadow-dom>
+          </li>
+
+          <li class="hidden linkRepositorio">
+            <p>
+              <a
+                href="https://github.com/allan516?tab=repositories"
+                target="_blank"
+                >Acesse meu Portifólio / respositório e veja todos os meus
+                projetos e estudos clicando aqui.&#128279;</a
+              >
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- Seção de contato com um formulário -->
+      <section class="hidden" id="contato">
+        <h1>Contato</h1>
+        <form
+          action="https://api.staticforms.xyz/submit"
+          method="post"
+          autocomplete="on"
+        >
+          <input
+            type="hidden"
+            name="accessKey"
+            value="b772f828-0b80-4715-9595-e247ed7ae22d"
+          />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://allan516.github.io/atividade"
+          />
+          <fieldset>
+            <!-- Campos para nome e email -->
+            <span>
+              <label for="inome">Nome </label>
+              <input
+                type="text"
+                name="name"
+                id="inome"
+                placeholder=" Seu nome"
+                required
+                autocomplete="name"
+              />
+            </span>
+            <br />
+            <span>
+              <label for="iemail">Email </label>
+              <input
+                type="email"
+                name="email"
+                id="iemail"
+                placeholder=" Email"
+                required
+                autocomplete="email"
+              /> </span
+            ><br />
+            <!-- Campo de textarea para mensagem -->
+            <span class="mensagem">
+              <label for="itext">Mensagem</label>
+              <textarea
+                name="message"
+                id="itext"
+                rows="3"
+                required
+                minlength="10"
+                maxlength="300"
+              ></textarea></span
+            ><br />
+            <!-- Botão de enviar formulário -->
+            <input type="submit" class="enviar" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer>
-        <p> &copy; Allan Mendes</p>
+      <p>&copy; Allan Mendes</p>
     </footer>
     <!-- Script do JavaScript -->
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
