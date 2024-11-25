@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 /* Reset CSS */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,8 +46,9 @@ table {
 }
 
 /* Configurações Gerais */
+
 * {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Poppins", sans-serif;
 	line-height: 1.2;
 }
 
@@ -111,6 +114,7 @@ nav button {
 	border: 1px solid lightgray;
 	background-color: black;
 	cursor: pointer;
+ font-family: "Poppins", sans-serif;
 }
 
 .linha {
@@ -172,6 +176,7 @@ div .menu li {
 .menu li a {
 	text-decoration: none;
 	color: inherit;
+ font-family: "Poppins", sans-serif;
 }
 
 /* Configurações da seção perfil */
