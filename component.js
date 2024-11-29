@@ -51,6 +51,7 @@ class Component extends HTMLElement {
 
     p {
     text-align: center;
+    padding: 10px;
     }
     a {
     text-decoration: none;
